@@ -4,7 +4,7 @@
   import Counter from "./lib/Counter.svelte";
 </script>
 
-<main class="container is-widescreen">
+<main class="kv-container ">
   <div>
     <a href="https://vitejs.dev" target="_blank"
       ><img src={viteLogo} class="logo" alt="Vite Logo" /></a
@@ -14,7 +14,8 @@
   </div>
   <h1>Vite+Svelte</h1>
   <div class="card"><Counter /></div>
-  <p>
+  <button class='button is-info'>Клавиша</button>
+  <p class="testic">
     Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank"
       >SvelteKit</a
     >, the official Svelte app framework powered by Vite !
@@ -23,6 +24,10 @@
 </main>
 
 <style lang="scss">
+  .testic{
+    color:darker($yellow,50);
+  }
+
   .logo {
     height: 6em;
     padding: 1.5em;
@@ -38,13 +43,13 @@
   }
 
   .read-the-docs {
-    color: #888;
+    color: $black;
     background-color: $colora;
   }
 
-  .container {
-    max-width: 960px;
-    background-color: #535bf2;
+  .kv-container {
+    max-width: 960px !important;
+    background-color: #dedede;
     height: 100vh;
   }
 </style>
